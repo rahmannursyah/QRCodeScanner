@@ -10,6 +10,7 @@
 		5C0F262A2B5CB5F6004101B5 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C0F26292B5CB5F6004101B5 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C0F26752B5CB6A8004101B5 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621B166F0AE0F2EFAD4DE70C /* Pods_Domain.framework */; };
 		5C0F26762B5CB6A8004101B5 /* Pods_Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 621B166F0AE0F2EFAD4DE70C /* Pods_Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C0F26982B5CBBC1004101B5 /* TransactionDetailUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F26972B5CBBC1004101B5 /* TransactionDetailUIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +31,7 @@
 		16D6A560A61FA598854530EE /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		5C0F26262B5CB5F6004101B5 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0F26292B5CB5F6004101B5 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		5C0F26972B5CBBC1004101B5 /* TransactionDetailUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailUIModel.swift; sourceTree = "<group>"; };
 		621B166F0AE0F2EFAD4DE70C /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3564A73AC877C7E452BB9FE /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				5C0F26292B5CB5F6004101B5 /* Domain.h */,
+				5C0F26972B5CBBC1004101B5 /* TransactionDetailUIModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 				TargetAttributes = {
 					5C0F26252B5CB5F6004101B5 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0F26982B5CBBC1004101B5 /* TransactionDetailUIModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3564A73AC877C7E452BB9FE /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -354,6 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16D6A560A61FA598854530EE /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

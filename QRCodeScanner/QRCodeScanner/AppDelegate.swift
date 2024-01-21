@@ -5,18 +5,23 @@
 //  Created by Rahmannur Rizki Syahputra on 21/01/24.
 //
 
+import Component
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		configureDI()
 		return true
 	}
 
+	func configureDI() {
+		DIContainer.shared.register(type: QRScannerPresenterToRouter.self, component: QRScannerRouter())
+		DIContainer.shared.register(type: TransactionDetailPresenterToRouter.self, component: TransactionDetailRouter())
+	}
+	
 	// MARK: UISceneSession Lifecycle
 
 	func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
