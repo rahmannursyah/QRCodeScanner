@@ -1,0 +1,40 @@
+PODS:
+  - CwlCatchException (2.1.2):
+    - CwlCatchExceptionSupport (~> 2.1.2)
+  - CwlCatchExceptionSupport (2.1.2)
+  - CwlMachBadInstructionHandler (2.1.2)
+  - CwlPosixPreconditionTesting (2.1.2)
+  - CwlPreconditionTesting (2.1.2):
+    - CwlCatchException (~> 2.1.2)
+    - CwlMachBadInstructionHandler (~> 2.1.2)
+    - CwlPosixPreconditionTesting (~> 2.1.2)
+  - Nimble (13.1.2):
+    - CwlPreconditionTesting (~> 2.1.0)
+  - Quick (7.3.0)
+
+DEPENDENCIES:
+  - Nimble (= 13.1.2)
+  - Quick (= 7.3.0)
+
+SPEC REPOS:
+  trunk:
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
+    - Nimble
+    - Quick
+
+SPEC CHECKSUMS:
+  CwlCatchException: 76542d5ea479c79ce16ddd6e7bc9d42c7ec63300
+  CwlCatchExceptionSupport: 42bf8c5e4e5e663f51100ddfa68caf7cfcf64ab6
+  CwlMachBadInstructionHandler: b982c7e3e44fcfa1c680e8046f6bba35f3476d65
+  CwlPosixPreconditionTesting: 4011f0660c0be460b088d10bcfdf351c7e036ac4
+  CwlPreconditionTesting: 23ed728f2acc2d774fb59101123c943ce0119107
+  Nimble: d733c860d832b324e9779034f12398993c536e7b
+  Quick: d32871931c05547cb4e0bc9009d66a18b50d8558
+
+PODFILE CHECKSUM: a71a6e8fcff2c22eaeeaf9ab204da53005037175
+
+COCOAPODS: 1.11.3
